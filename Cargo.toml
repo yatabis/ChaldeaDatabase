@@ -1,0 +1,17 @@
+[package]
+name = "chaldea_database"
+version = "0.1.0"
+authors = ["yatabis <39yatabis.rim8820xxx@gmail.com>"]
+edition = "2018"
+publish = false
+[[bin]]
+name = "chaldea_database"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3"
+env_logger = "0.8.2"
+serde = "1.0.118"
+sqlx = { version = "0.4.1", features = ["runtime-actix-rustls", "postgres"] }
